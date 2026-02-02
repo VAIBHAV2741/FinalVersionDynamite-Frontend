@@ -49,6 +49,15 @@
     );
 }
 
+.squiggly-line {
+  animation: squiggle 2s ease-in-out infinite;
+}
+
+@keyframes squiggle {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-2px); }
+}
+
 .mask {
   mask-image: linear-gradient(
     to bottom,
