@@ -1,83 +1,83 @@
-<p align="center">
-  <a href="https://go.clerk.com/e3UDpP4" target="_blank" rel="noopener noreferrer">
-   <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./public/light-logo.png">
-      <img src="./public/dark-logo.png" height="64">
-    </picture>
-  </a>
-  <br />
-</p>
-<div align="center">
-  <h1>
-    Next.js Clerk auth starter template
-  </h1>
-  <a href="https://www.npmjs.com/package/@clerk/clerk-js">
-    <img alt="" src="https://img.shields.io/npm/dm/@clerk/clerk-js" />
-  </a>
-  <a href="https://discord.com/invite/b5rXHjAg7A">
-    <img alt="Discord" src="https://img.shields.io/discord/856971667393609759?color=7389D8&label&logo=discord&logoColor=ffffff" />
-  </a>
-  <a href="https://twitter.com/clerkdev">
-    <img alt="Twitter" src="https://img.shields.io/twitter/url.svg?label=%40clerkdev&style=social&url=https%3A%2F%2Ftwitter.com%2Fclerkdev" />
-  </a>
-  <br />
-  <br />
-  <img alt="Clerk Hero Image" src="public/og.png">
-</div>
+# 🧨 DynamiteTrade
 
-## Introduction
+<img width="1897" height="913" alt="Screenshot 2026-02-03 100310" src="https://github.com/user-attachments/assets/562b907b-f1da-4494-823d-b195f6d4265a" />
 
-Clerk is a developer-first authentication and user management solution. It provides pre-built React components and hooks for sign-in, sign-up, user profile, and organization management. Clerk is designed to be easy to use and customize, and can be dropped into any React or Next.js application.
 
-This template allows you to get started with Clerk and Next.js (App Router) in a matter of minutes, and demonstrates features of Clerk such as:
+### [🚀 Live Demo](https://final-version-dynamite-frontend.vercel.app/) • [📂 Backend API](http://localhost:3000) • [🔮 Prediction Engine](https://dynamite-djangomodel.onrender.com/predict/?crypto=solana)
 
-- Fully functional auth flow with sign-in, sign-up, and a protected page
-- Customized Clerk components with Tailwind CSS
-- Hooks for accessing user data and authentication state
-- Organizations for multi-tenant applications
+**DynamiteTrade** is a high-performance, institutional-grade stock and cryptocurrency analytics platform. Built with **Next.js 15** and **Tailwind CSS 4**, it delivers real-time market data, AI-driven price predictions, and a proprietary quantitative scoring engine to empower traders with data-backed conviction.
 
-## Demo
+---
 
-A hosted demo of this example is available at https://clerk-nextjs-app-router.vercel.app/
+## 🌟 Key Pillars
 
-## Deploy
+### 1. 🧠 Dynamite Quant Engine
+Our proprietary scoring algorithm evaluates assets across six dimensions to provide a unified `BUY`/`HOLD`/`SELL` recommendation:
+- **Valuation**: Forward/Trailing PE normalization.
+- **Trend**: Price position relative to 52-week High/Low.
+- **Momentum**: Volatility-adjusted price change velocity.
+- **Volatility**: Intraday range analysis.
+- **Market Cap**: Logarithmic size-based weighting.
+- **Dividend**: Yield-on-cost evaluation.
 
-Easily deploy the template to Vercel with the button below. You will need to set the required environment variables in the Vercel dashboard.
+### 2. 🔮 AI Predictive Modeling
+Deep learning models hosted on Django REST clusters provide real-time price forecasting for major cryptocurrencies and NSE stocks.
+- **Crypto**: SOL, BTC, ETH.
+- **Stocks**: Top 20 NSE blue-chip stocks.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fclerk%2Fnextjs-auth-starter-template&project-name=nextjs-clerk&repository-name=nextjs-with-clerk&demo-title=Next.js+Clerk+Template&demo-description=A+Next.js+application+pre-configured+to+authenticate+users+with+Clerk.&demo-url=https%3A%2F%2Fnextjs-auth-starter-template-kit.vercel.app%2F&demo-image=%2F%2Fraw.githubusercontent.com%2Fclerk%2Fnextjs-auth-starter-template%2Frefs%2Fheads%2Fmain%2Fpublic%2Fog.png&products=%5B%7B%22type%22%3A%22integration%22%2C%22integrationSlug%22%3A%22clerk%22%2C%22productSlug%22%3A%22clerk%22%2C%22protocol%22%3A%22authentication%22%2C%22group%22%3A%22%22%7D%5D)
+### 3. 📊 Visual Intelligence
+Institutional-grade charting powered by **Highcharts** and **Lightweight Charts**.
+- Real-time **Order Book** logs.
+- Support/Resistance level identification.
+- Volatility-adjusted price action visualization.
 
-## Running the template
 
+
+---<img width="1878" height="867" alt="Screenshot 2026-02-03 100238" src="https://github.com/user-attachments/assets/286832e6-d2c9-44f0-8df9-45a9bcdd34f5" />
+
+
+## �️ Technology Stack
+
+| Layer | Technologies |
+| :--- | :--- |
+| **Frontend** | Next.js 15 (App Router), TypeScript, Tailwind CSS 4, Aceternity UI, Framer Motion |
+| **Backend** | Node.js, Express 5, Yahoo Finance (Data Provider), WebSocket (Live Ticks) |
+| **ML/Model** | Python 3.10, Django REST, Pandas, Scikit-Learn |
+| **Auth** | Clerk (JWT-based session management) |
+
+---
+
+## 📊 Terminal Dashboard
+
+---![Uploading Screenshot 2026-02-03 100310.png…]()
+
+
+## ⚡ Setup & Deployment
+
+### Backend
 ```bash
-git clone https://github.com/clerk/clerk-nextjs-demo-app-router
+git clone ...
+cd backend
+npm install
+node index.js
 ```
 
-To run the example locally, you need to:
+### Frontend
+```bash
+cd frontend/nextjs-auth-starter-template
+npm install
+npm run dev
+```
 
-1. Sign up for a Clerk account at [https://clerk.com](https://go.clerk.com/31bREJU).
-2. Go to the [Clerk dashboard](https://go.clerk.com/4I5LXFj) and create an application.
-3. Set the required Clerk environment variables as shown in [the example `env` file](./.env.example).
-4. Go to "Organization Settings" in your sidebar and enable Organizations
-5. `npm install` the required dependencies.
-6. `npm run dev` to launch the development server.
+### Environment Config
+```env
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_...
+CLERK_SECRET_KEY=sk_test_...
+NEXT_PUBLIC_API_URL=http://localhost:3000
+```
 
-## Learn more
+---
 
-To learn more about Clerk and Next.js, check out the following resources:
+## � License
 
-- [Quickstart: Get started with Next.js and Clerk](https://go.clerk.com/vgWhQ7B)
-- [Clerk Documentation](https://go.clerk.com/aNiTioa)
-- [Next.js Documentation](https://nextjs.org/docs)
-
-## Found an issue or have feedback?
-
-If you have found an issue with this repo or have feedback, please join our Discord and create a new thread inside of our [support](https://clerk.com/discord) channel.
-
-If it's a quick fix, such as a misspelled word or a broken link, feel free to skip creating a thread.
-Go ahead and create a [pull request](https://github.com/clerk/clerk-nextjs-demo-app-router/pulls) with the solution. :rocket:
-
-## Connect with us
-
-You can discuss ideas, ask questions, and meet others from the community in our [Discord](https://clerk.com/discord).
-
-If you prefer, you can also find support through our [Twitter](https://twitter.com/ClerkDev), or you can [email](mailto:support@clerk.dev) us!
+This project is licensed under the **ISC License**. Built with ❤️ for the trading community.
